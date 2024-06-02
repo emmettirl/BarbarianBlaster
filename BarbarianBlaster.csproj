@@ -7,5 +7,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include="README.md" />
   </ItemGroup>
 </Project>
