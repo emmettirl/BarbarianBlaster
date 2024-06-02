@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://rmc2u4lw0scv"]
+
+[ext_resource type="Script" path="res://scripts/base.gd" id="1_enh27"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pkdnp"]
+albedo_color = Color(0.756863, 0.054902, 0.172549, 0.776471)
+
+[node name="Base" type="Node3D" groups=["base"]]
+script = ExtResource("1_enh27")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+radius = 2.0
+height = 4.0
+sides = 32
+material = SubResource("StandardMaterial3D_pkdnp")
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
+billboard = 1
+text = "Starting Health"
+font_size = 500
+outline_size = 100
